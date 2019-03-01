@@ -1,0 +1,26 @@
+{
+  "presets" : [
+    [
+      "env",
+      {
+        "modules": false,
+        "target": {
+          "browsers": ["last 2 versions"]
+        }
+      }
+    ],
+    "stage-2",
+    "react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-decorators-legacy",
+    "transform-runtime",
+    ["import", {"libraryName": "antd", "style": "css"}]
+  ],
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}
